@@ -356,24 +356,20 @@ operator="*";        // TODO add your handling code here:
     }//GEN-LAST:event_b17ActionPerformed
 
     private void b14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b14ActionPerformed
-        String answer;
+  
         secondnumber = Double.parseDouble(t1.getText());
         if(operator == "+")
         {result=firstnumber+secondnumber;
-            answer =String.format("%.0f",result);
-            t1.setText(answer);}
+            t1.setText(Double.toString(result));}
         else if(operator == "-")
         {result=firstnumber-secondnumber;
-            answer =String.format("%.0f",result);
-            t1.setText(answer);}
+           t1.setText(Double.toString(result));}
          else if(operator == "/")
         {result=firstnumber/secondnumber;
-            answer =String.format("%.0f",result);
-            t1.setText(answer);}
+            t1.setText(Double.toString(result));}
          else if(operator == "*")
         {result=firstnumber*secondnumber;
-            answer =String.format("%.0f",result);
-            t1.setText(answer);}
+            t1.setText(Double.toString(result));}
     }//GEN-LAST:event_b14ActionPerformed
 
     private void b13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b13ActionPerformed
